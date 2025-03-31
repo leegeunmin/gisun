@@ -62,7 +62,13 @@ if not patrol_locations:
 def geocode_address(address):
     geolocator = Nominatim(user_agent="geoapi", timeout=10)
     try:
-        location = geolocator.geocode(address)
+        location = geolocator.geocode(
+            address,
+            exactly_one=True,
+            bounded=True,
+            country_codes="kr",
+            language="ko"
+        )
         if location:
             return {"lat": location.latitude, "lon": location.longitude}
         else:
@@ -223,7 +229,7 @@ if patrol_locations:
             st.markdown(
                 f"""
                 <div style="text-align: left; font-size: 25px; color: {text_color}; margin-top: 20px;">
-                    <b>🌟 고양경찰서 CPO 데이터 분석 결과</b>
+                    <b>🌟 고양서 CPO 데이터 분석 결과</b>
                 </div>
                 """, unsafe_allow_html=True)
             st.markdown(info['description'])
