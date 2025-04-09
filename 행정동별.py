@@ -147,9 +147,9 @@ st.markdown(
 st.markdown(
     f"""
     <div style="text-align: center; font-size: 17px; color: {text_color}; margin-top: 20px;">
-        <b>고양경찰서 순찰 최적지역 안내</b><br>
-        지역경찰, 기동순찰대 예방활동에 필요한<br>
-        정보, 데이터를 제공해드립니다.
+        <b>고양경찰서 순찰 필요지역 안내</b><br>
+        4월 범죄예방 전략회의 시 강조사항<br>
+        무인점포 절도예방, 야간 취약지역을 적극적으로 확인해주시기 바랍니다.
     </div>
     """, unsafe_allow_html=True)
 st.markdown("---")
