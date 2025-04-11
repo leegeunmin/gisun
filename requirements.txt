@@ -1,9 +1,7 @@
 streamlit
-openai
 pandas
-python-dotenv
-geopy
-streamlit-option-menu
-pydeck
 folium
 streamlit-folium
+geopy
+python-dotenv
+openai
