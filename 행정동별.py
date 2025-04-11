@@ -22,7 +22,7 @@ def get_ai_response(prompt):
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "당신은 자율방범대에게 순찰 시 필요한 사항을 안내해주는 안내자입니다."},
+            {"role": "system", "content": "당신은 기동순찰대원 순찰 시 필요한 사항을 안내해주는 안내자입니다."},
             {"role": "user", "content": prompt}
         ],
         max_tokens=500,
